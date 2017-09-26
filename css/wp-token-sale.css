@@ -1,0 +1,198 @@
+html, body {
+   height: 100%;
+}
+
+/* Defaults and fixes ------------------- */
+
+.card > .card-header + .list-group > .list-group-item:first-child,
+.card > .list-group + .card-footer {
+    border-top: 0;
+}
+
+/* Form elements ------------------- */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+   padding: .5rem .75rem;
+   border: 1px solid rgba(0,0,0,.15);
+   -moz-border-radius: .25rem;
+   -webkit-border-radius: .25rem;
+   border-radius: .25rem;
+   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+   border: 1px solid rgba(81, 203, 238, 1);
+   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+button {
+   cursor: pointer;
+}
+
+/* Header ------------------- */
+
+.tokensale-plugin-environment-dashboard .navbar-header {
+   -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+   -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+   background: #0275d8;
+}
+
+.tokensale-plugin-environment-dashboard .navbar-header .navbar-brand {
+   margin-right: 0;
+   text-align: center;
+   color: #fff;
+}
+
+.tokensale-plugin-environment-dashboard .navbar-header .navbar-nav {
+   display: none;
+}
+
+.tokensale-plugin-environment-dashboard .navbar-header .navbar-nav .nav-link {
+   color: #162f44;
+}
+
+.tokensale-plugin-environment-dashboard .navbar-header .navbar-nav .nav-link a {
+   color: #dff0ff;
+}
+
+/* Side bar ------------------- */
+
+.tokensale-plugin-environment-dashboard .sidebar {
+   background: #162f44;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu {
+   margin: 0.625em 0;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu li {
+   font-size: 0.875em;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu li:first-child {
+   border-top: none;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu li:last-child {
+   border-bottom: none;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu li a {
+   padding: 0.8125em 0;
+   display: block;
+   color: #c9d6e0;
+}
+
+/* Side bar menu toggler ------------------- */
+
+.tokensale-plugin-environment-dashboard .sidebar .menu-toggler {
+   margin: 15px 0;
+   padding: 8px 10px 9px 10px;
+   float: right;
+   border: 1px solid #526d84;
+   border-radius: 3px;
+   background: transparent;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu-toggler:focus {
+   outline: none;
+}
+
+.tokensale-plugin-environment-dashboard .sidebar .menu-toggler .icon-bar {
+   height: 2px;
+   width: 22px;
+   margin-top: 3px;
+   display: block;
+   border-radius: 1px;
+   background: #526d84;
+}
+
+/* Main bar ------------------- */
+
+.tokensale-plugin-environment-dashboard .mainbar .cards {
+   margin-top: 1.25em;
+}
+
+.tokensale-plugin-environment-dashboard .mainbar .cards .card {
+   margin-bottom: 1.875em;
+}
+
+.tokensale-plugin-environment-dashboard .token-balance-value {
+   margin: auto;
+}
+
+.tokensale-plugin-environment-dashboard .token-amount-buttons .btn {
+   margin-bottom: 0.3em;
+}
+
+.tokensale-plugin-environment-dashboard .token-purchasing .btn {
+   margin: 0.625em 0 0.875em 0;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+   /* Header ------------------- */
+
+   .tokensale-plugin-environment-dashboard .navbar-header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 1020;
+   }
+
+   .tokensale-plugin-environment-dashboard .navbar-header .navbar-nav {
+      margin-left: auto;
+      display: flex;
+   }
+
+   /* Side bar ------------------- */
+
+   .tokensale-plugin-environment-dashboard .sidebar {
+      position: fixed;
+      top: 3.3125em;
+      bottom: 0;
+      z-index: 1000;
+   }
+
+   .tokensale-plugin-environment-dashboard .sidebar .menu {
+      display: block;
+      margin-top: 1.875em;
+   }
+
+   .tokensale-plugin-environment-dashboard .sidebar .menu li a {
+      padding: 0.875em 1.25em;
+   }
+
+   .tokensale-plugin-environment-dashboard .sidebar .menu li a:hover {
+      text-decoration: none;
+      background: #0e2233;
+      cursor: pointer;
+   }
+
+   .tokensale-plugin-environment-dashboard .sidebar .menu-toggler {
+      display: none;
+   }
+
+   /* Main bar ------------------- */
+
+   .tokensale-plugin-environment-dashboard .mainbar {
+      margin-top: 3.3125em;
+   }
+
+
+}
